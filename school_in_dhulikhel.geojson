@@ -1,0 +1,1296 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-12-10T16:07:30Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1772139973",
+        "addr:street": "Budol M.",
+        "amenity": "school",
+        "fixme": "check",
+        "name": "काभ्रे उच्च माद्यमिक बिद्यालय",
+        "name:en": "Kavre Higher Secondary School",
+        "name:ne": "काभ्रे उच्च माद्यमिक बिद्यालय"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5344696,
+          27.6297937
+        ]
+      },
+      "id": "node/1772139973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2048106035",
+        "amenity": "school",
+        "name": "गोल्सिडेन सिद्धार्थ एकेडेमी",
+        "name:en": "Golden Siddhartha Academy",
+        "name:ne": "गोल्सिडेन सिद्धार्थ एकेडेमी"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.53262,
+          27.6143127
+        ]
+      },
+      "id": "node/2048106035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4465023091",
+        "addr:hamlet": "Bhanjyang-4",
+        "addr:street": "Dhulikhel Sindhuli Bhittamod Highway",
+        "amenity": "school",
+        "name": "श्री कार्तारी माध्यमिक विद्यालय",
+        "name:en": "Shree Karthari Secondary School",
+        "name:ne": "श्री कार्तारी माध्यमिक विद्यालय",
+        "opening_hours": "Su-Fr-Sa 21:00-04:00",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5756086,
+          27.6012902
+        ]
+      },
+      "id": "node/4465023091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4469804590",
+        "amenity": "school",
+        "email": "mic.som@ku.edu.np",
+        "name": " सूचना तथा सञ्चार विभाग",
+        "name:en": "Department of Management Informatics and Communication",
+        "name:ne": " सूचना तथा सञ्चार विभाग",
+        "website": "https://web.ku.edu.np/domic"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5379062,
+          27.6193915
+        ]
+      },
+      "id": "node/4469804590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4571626246",
+        "addr:hamlet": "Eklekhet-5",
+        "amenity": "school",
+        "name": "श्री धनकाली प्रा. बि",
+        "name:en": "Shree Dhankali Pra. Vi",
+        "name:ne": "श्री धनकाली प्रा. बि",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5675283,
+          27.5685989
+        ]
+      },
+      "id": "node/4571626246"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4595611790",
+        "addr:housenumber": "12",
+        "addr:street": "KU road",
+        "amenity": "school",
+        "name": "फार्मेसी विभाग",
+        "name:en": "Department of Pharmacy",
+        "name:ne": "फार्मेसी विभाग"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5380309,
+          27.6189173
+        ]
+      },
+      "id": "node/4595611790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4595626489",
+        "addr:street": "KU road",
+        "amenity": "school",
+        "name": "Biotechnology building"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5393685,
+          27.6192952
+        ]
+      },
+      "id": "node/4595626489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4639101589",
+        "addr:street": "KU road",
+        "amenity": "school",
+        "name": "परीक्षा नियन्त्रकको कार्यालय",
+        "name:en": "Office of Examination Controller",
+        "name:ne": "परीक्षा नियन्त्रकको कार्यालय"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5389681,
+          27.6174327
+        ]
+      },
+      "id": "node/4639101589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4662962089",
+        "addr:hamlet": "Kharka-3",
+        "addr:street": "B.P. Highway",
+        "amenity": "school",
+        "name:en": "Shree Hanuman Secondary School",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5889929,
+          27.593695
+        ]
+      },
+      "id": "node/4662962089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4803688223",
+        "addr:hamlet": "Cholamath-6",
+        "amenity": "school",
+        "name": "श्री पञ्चकन्या प्राथमिक विद्यालय",
+        "name:en": "Shri panchakanya primary school",
+        "name:ne": "श्री पञ्चकन्या प्राथमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5493382,
+          27.6247764
+        ]
+      },
+      "id": "node/4803688223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4804962824",
+        "addr:city": "Dhulikhel",
+        "addr:housenumber": "07",
+        "amenity": "school",
+        "name": "धुलिखेल हाई स्कूल",
+        "name:en": "Dhulikhel High School",
+        "name:ne": "धुलिखेल हाई स्कूल"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5577064,
+          27.6140274
+        ]
+      },
+      "id": "node/4804962824"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4806919624",
+        "amenity": "school",
+        "name": "हिमालय अन्तर्राष्ट्रिय बोर्डिंग स्कूल",
+        "name:en": "Himalayan international boarding school",
+        "name:ne": "हिमालय अन्तर्राष्ट्रिय बोर्डिंग स्कूल"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5480237,
+          27.6254463
+        ]
+      },
+      "id": "node/4806919624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4881216921",
+        "addr:housenumber": "3",
+        "addr:postcode": "012",
+        "amenity": "school",
+        "name": "श्रीखण्डपुर हाई स्कूल",
+        "name:en": "shrikhadpur high school",
+        "name:ne": "श्रीखण्डपुर हाई स्कूल",
+        "opening_hours": "Su-Fr 09:00-16:00",
+        "operator": "government",
+        "phone": "011661312"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5353265,
+          27.6135426
+        ]
+      },
+      "id": "node/4881216921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5002863299",
+        "addr:hamlet": "Nayabasti-6",
+        "amenity": "school",
+        "name": "श्री कालिदेवी प्राथमिक विद्यालय",
+        "name:en": "Shri Kalidevi Primary School",
+        "name:ne": "श्री कालिदेवी प्राथमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5565303,
+          27.6274184
+        ]
+      },
+      "id": "node/5002863299"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5002876135",
+        "addr:hamlet": "Kuttal-6",
+        "amenity": "school",
+        "name": "श्री मण्डली देवी प्राथमिक विद्यालय",
+        "name:en": "Shri Mandali Devi Primary School",
+        "name:ne": "श्री मण्डली देवी प्राथमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5481415,
+          27.6350964
+        ]
+      },
+      "id": "node/5002876135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5002876696",
+        "addr:hamlet": "Pakucha-1",
+        "amenity": "school",
+        "name": "श्री चक्रदेवी प्राथमिक विद्यालय",
+        "name:en": "Shri Chakradevi Primary School",
+        "name:ne": "श्री चक्रदेवी प्राथमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5677137,
+          27.6188752
+        ]
+      },
+      "id": "node/5002876696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5002877114",
+        "addr:hamlet": "Watole-2",
+        "amenity": "school",
+        "name": "श्री हरि सिद्धि निम्न माध्यमिक विद्यालय",
+        "name:en": "Shri Hari Siddhi Lower Secondary School",
+        "name:ne": "श्री हरि सिद्धि निम्न माध्यमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5535289,
+          27.6188852
+        ]
+      },
+      "id": "node/5002877114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5002881389",
+        "addr:hamlet": "Srikhandapur-8",
+        "amenity": "school",
+        "name": "श्री श्रीखण्डपुर प्राथमिक विद्यालय",
+        "name:en": "Shri Srikhandapur Primary School",
+        "name:ne": "श्री श्रीखण्डपुर प्राथमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5346566,
+          27.6160069
+        ]
+      },
+      "id": "node/5002881389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5002894210",
+        "addr:hamlet": "Bakhundole-7",
+        "amenity": "school",
+        "name": "श्री सेतीदेवी प्राथमिक विद्यालय",
+        "name:en": "Shree Setidevi Primary School",
+        "name:ne": "श्री सेतीदेवी प्राथमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5380783,
+          27.6221163
+        ]
+      },
+      "id": "node/5002894210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5002899090",
+        "addr:hamlet": "Thakle-1",
+        "amenity": "school",
+        "name": "श्री चायालदेवी प्राथमिक विद्यालय",
+        "name:en": "Shri Chayaldevi Primary School",
+        "name:ne": "श्री चायालदेवी प्राथमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5741078,
+          27.6262535
+        ]
+      },
+      "id": "node/5002899090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5002899341",
+        "addr:hamlet": "Addabazar-2",
+        "amenity": "school",
+        "name": "श्री बालमन्दिर निम्न माध्यमिक विद्यालय",
+        "name:en": "Shri Balmandir Lower Secondary School",
+        "name:ne": "श्री बालमन्दिर निम्न माध्यमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5611758,
+          27.6152573
+        ]
+      },
+      "id": "node/5002899341"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5002908883",
+        "addr:hamlet": "Shrikhandapur-8",
+        "amenity": "school",
+        "name": "श्री श्रीखण्डपुर उच्च माध्यमिक विद्यालय",
+        "name:en": "Shri Shrikhandapur Higher Secondary School",
+        "name:ne": "श्री श्रीखण्डपुर उच्च माध्यमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5386889,
+          27.6068238
+        ]
+      },
+      "id": "node/5002908883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5002913411",
+        "addr:hamlet": "Chhochhetole-5",
+        "amenity": "school",
+        "name": "श्री पूर्ण संजीवनी लङ्खानमाई उच्च माध्यमिक विद्यालय",
+        "name:en": "Shri Purna Sanjiwani Lankhanamai Higher Secondary School",
+        "name:ne": "श्री पूर्ण संजीवनी लङ्खानमाई उच्च माध्यमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.551725,
+          27.6174872
+        ]
+      },
+      "id": "node/5002913411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5002915207",
+        "addr:hamlet": "Naya Gaun-6",
+        "amenity": "school",
+        "name": "ताशी छ्‍योलिङ् गोन्पा विद्यालय",
+        "name:en": "Tashi Chhyoiling Gonpa School",
+        "name:ne": "ताशी छ्‍योलिङ् गोन्पा विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5557945,
+          27.6213443
+        ]
+      },
+      "id": "node/5002915207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5006638579",
+        "addr:hamlet": "Fusrathumka-8",
+        "amenity": "school",
+        "name": "Bachala Devi Lower Secondary School",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5946484,
+          27.6050031
+        ]
+      },
+      "id": "node/5006638579"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5006640747",
+        "addr:hamlet": "Ranachhap-3",
+        "amenity": "school",
+        "name": "नव ज्योति प्राथमिक विद्यालय",
+        "name:en": "Nava Jyoti Primary School",
+        "name:ne": "नव ज्योति प्राथमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5616877,
+          27.602631
+        ]
+      },
+      "id": "node/5006640747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5006643950",
+        "addr:hamlet": "Darimbote-5",
+        "amenity": "school",
+        "name": "Darimbot Bal Primary School",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5822506,
+          27.6049765
+        ]
+      },
+      "id": "node/5006643950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5006659572",
+        "addr:hamlet": "Badalgaun-6",
+        "amenity": "school",
+        "name": "Saraswati Secondary School",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5819664,
+          27.6163075
+        ]
+      },
+      "id": "node/5006659572"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5006664375",
+        "addr:hamlet": "Phaskot-1",
+        "amenity": "school",
+        "name": "बाल चेतना प्राथमिक विद्यालय",
+        "name:en": "Bal Chetna Primary School",
+        "name:ne": "बाल चेतना प्राथमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5711869,
+          27.5926188
+        ]
+      },
+      "id": "node/5006664375"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5006664540",
+        "addr:hamlet": "Shikhartari-6",
+        "amenity": "school",
+        "name": "Binayak Bal Lower Secondary School",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5878946,
+          27.613753
+        ]
+      },
+      "id": "node/5006664540"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5009181482",
+        "addr:city": "Mathurapati Fulbari",
+        "addr:hamlet": "Mathurapati-4",
+        "addr:housenumber": "1",
+        "addr:postcode": "45200",
+        "addr:street": "Phulbari - Bhakunde Rd.",
+        "amenity": "school",
+        "name": "Shree Mathurapati Secondary School",
+        "opening_hours": "Su-Fr 10:00-16:00",
+        "operator:type": "government",
+        "phone": "9841396082",
+        "source": "Namobuddha open mapping 2022",
+        "staff_count:teachers": "16",
+        "student:count": "181"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.6050538,
+          27.5822044
+        ]
+      },
+      "id": "node/5009181482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5009193431",
+        "addr:city": "Mathurapati Phulbari",
+        "addr:hamlet": "Tallochaur-2",
+        "addr:postcode": "45200",
+        "addr:street": "HEERA PASAL- NARALTOLE ROAD",
+        "amenity": "school",
+        "description": "It is a community based primary school.",
+        "name": "Shri Simalchaur Primary School",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5987644,
+          27.5852393
+        ]
+      },
+      "id": "node/5009193431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5009204494",
+        "addr:hamlet": "Patlegaun-8",
+        "amenity": "school",
+        "name": "Shree Janjhakriti Secondary School",
+        "operator:type": "government",
+        "source": "Namobuddha open mapping 2022",
+        "staff_count:teachers": "8",
+        "student:count": "127"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.6189878,
+          27.5874526
+        ]
+      },
+      "id": "node/5009204494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5010929873",
+        "addr:hamlet": "Subba Gaun-2",
+        "amenity": "school",
+        "name": "श्री ग्रामोदय नि. मा. बि",
+        "name:en": "Shri Gramodaya Ni. Ma. Bi.",
+        "name:ne": "श्री ग्रामोदय नि. मा. बि",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5244664,
+          27.599864
+        ]
+      },
+      "id": "node/5010929873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5010934593",
+        "addr:hamlet": "Dulalthok-7",
+        "amenity": "school",
+        "name": "Shri Bhamarkot Himalayan Ni Ma V",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.6047941,
+          27.6337216
+        ]
+      },
+      "id": "node/5010934593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5010945423",
+        "addr:hamlet": "Pepal Dada-1",
+        "amenity": "school",
+        "name": "Prativa Pra Vi",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.609227,
+          27.6289216
+        ]
+      },
+      "id": "node/5010945423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5010953224",
+        "addr:hamlet": "Mayelpani-3",
+        "amenity": "school",
+        "name": "Jana Uddhar Pra Vi",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5936495,
+          27.6413005
+        ]
+      },
+      "id": "node/5010953224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5010956841",
+        "addr:hamlet": "Ekatabasti-9",
+        "amenity": "school",
+        "name": "Shree Bhabishya Primary School",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.6148595,
+          27.6248229
+        ]
+      },
+      "id": "node/5010956841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5010987931",
+        "addr:hamlet": "Thantithok-1",
+        "amenity": "school",
+        "name": "Mahankal Lower Secondary School",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.589962,
+          27.5842933
+        ]
+      },
+      "id": "node/5010987931"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5010997667",
+        "addr:hamlet": "Dabdagaun-5",
+        "amenity": "school",
+        "name": "Kali Devi Secondary School",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.605188,
+          27.5913336
+        ]
+      },
+      "id": "node/5010997667"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5011016610",
+        "addr:city": "Dhulikhel",
+        "addr:hamlet": "Thulitar-4",
+        "addr:housenumber": "11",
+        "amenity": "school",
+        "name": "Danfe Primary School",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.6080574,
+          27.6112595
+        ]
+      },
+      "id": "node/5011016610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5013244804",
+        "addr:hamlet": "Chisapani-1",
+        "amenity": "school",
+        "name": "श्री सेतीदेवी उच्च माध्यमिक विद्यालय",
+        "name:en": "Shree Setidevi Higher Secondary School",
+        "name:ne": "श्री सेतीदेवी उच्च माध्यमिक विद्यालय",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5675569,
+          27.6460465
+        ]
+      },
+      "id": "node/5013244804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5013320329",
+        "addr:hamlet": "Dahaltar-4",
+        "amenity": "school",
+        "name": "श्री जनक जागृति प्रा. बि",
+        "name:en": "Shree Janak Jagriti Pra. Vi",
+        "name:ne": "श्री जनक जागृति प्रा. बि",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.560019,
+          27.5746499
+        ]
+      },
+      "id": "node/5013320329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5013331542",
+        "addr:hamlet": "Piple-9",
+        "amenity": "school",
+        "name": "श्री शंखेश्वरी प्रा.वि",
+        "name:en": "Shree Shankheshwari Pra. Vi",
+        "name:ne": "श्री शंखेश्वरी प्रा.वि",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5761733,
+          27.5809547
+        ]
+      },
+      "id": "node/5013331542"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5013335203",
+        "addr:hamlet": "Ite-7",
+        "amenity": "school",
+        "name": "श्री गणेश कालिका नि मा वी",
+        "name:en": "Shree Ganesh Kalika Ni Ma Vi",
+        "name:ne": "श्री गणेश कालिका नि मा वी",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5587278,
+          27.5804648
+        ]
+      },
+      "id": "node/5013335203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5013335625",
+        "addr:hamlet": "Patichaur-1",
+        "amenity": "school",
+        "name": "श्री शङ्केश्वर महालक्ष्मी मा. बि",
+        "name:en": "Shree Shankeshwar Mahalaxmi Ma. Vi",
+        "name:ne": "श्री शङ्केश्वर महालक्ष्मी मा. बि",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.569604,
+          27.576428
+        ]
+      },
+      "id": "node/5013335625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5013591700",
+        "addr:city": "Sarada Batase",
+        "addr:hamlet": "Sarada Batase,Pipal Bot-5",
+        "amenity": "school",
+        "description": "It is a community funded school.",
+        "grades": "1-8",
+        "name": "श्री बाल ज्योति निम्न माध्यमिक अंग्रेजी विद्यालय",
+        "name:en": "Shree Bal Jyoti Lower Secondary English School",
+        "name:ne": "श्री बाल ज्योति निम्न माध्यमिक अंग्रेजी विद्यालय",
+        "operator": "Community school funded also by Government.",
+        "operator:type": "community",
+        "religion": "none"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5503878,
+          27.5961127
+        ]
+      },
+      "id": "node/5013591700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5013595347",
+        "addr:hamlet": "Batase-1",
+        "amenity": "school",
+        "grades": "1-10",
+        "name": "श्री कालिका मा. बि",
+        "name:en": "Shree Kalika Ma. Vi.",
+        "name:ne": "श्री कालिका मा. बि",
+        "operator:type": "government",
+        "religion": "none"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5528906,
+          27.5876445
+        ]
+      },
+      "id": "node/5013595347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5019250183",
+        "addr:hamlet": "Kause-3",
+        "amenity": "school",
+        "name": "Jana Prabhat Primary School",
+        "operator:type": "government"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.6003158,
+          27.5653713
+        ]
+      },
+      "id": "node/5019250183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5227840224",
+        "amenity": "school",
+        "name": "बाल मन्दिर बिधालय",
+        "name:en": "बाल मन्दिर बिधालय",
+        "name:ne": "बाल मन्दिर बिधालय"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5614079,
+          27.6153563
+        ]
+      },
+      "id": "node/5227840224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5439249836",
+        "addr:street": "Dhulikhel Sindhuli Bhittamod Highway",
+        "amenity": "school",
+        "name": "बाल विकास विद्यालय",
+        "name:en": "Bal Vikash School",
+        "name:ne": "बाल विकास विद्यालय",
+        "opening_hours": "Su-Fr 08:00-18:00",
+        "phone": "9841581702"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5668557,
+          27.6009436
+        ]
+      },
+      "id": "node/5439249836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5473226421",
+        "amenity": "school",
+        "name": "Namo Buddha Vajra Vidhya Institute"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5831452,
+          27.5716786
+        ]
+      },
+      "id": "node/5473226421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6516254698",
+        "amenity": "school",
+        "email": "kabhresecondaryschool@gmail.com",
+        "name": "काभ्रे माध्यमिक विद्यालय",
+        "name:en": "Kabhre Secondary School",
+        "name:ne": "काभ्रे माध्यमिक विद्यालय",
+        "phone": "011662038"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5351033,
+          27.6304335
+        ]
+      },
+      "id": "node/6516254698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6708963287",
+        "addr:street": "Way to Namo Budha",
+        "amenity": "school",
+        "name": "शारदा माध्यमिक विद्यालय",
+        "name:en": "Sharada Secondary School",
+        "name:ne": "शारदा माध्यमिक विद्यालय"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5403853,
+          27.5788372
+        ]
+      },
+      "id": "node/6708963287"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9507378179",
+        "addr:hamlet": "Shyampati, Namobuddha",
+        "amenity": "school",
+        "email": "Laxminarayan2075@gmail.com",
+        "name": "Shree Laxmi Narayan Secondary School",
+        "opening_hours": "Su-Fr 10:00-16:00",
+        "operator:type": "government",
+        "phone": "9841905253",
+        "source": "Namobuddha open mapping 2022",
+        "staff_count:teachers": "19",
+        "student:count": "303"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5907322,
+          27.5672943
+        ]
+      },
+      "id": "node/9507378179"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9507378190",
+        "addr:hamlet": "Patlay gau",
+        "amenity": "school",
+        "email": "Lightandsaltschool@gmail.com",
+        "name": "Light and salt school",
+        "phone": "9813859693",
+        "source": "Namobuddha open mapping 2022",
+        "staff_count:teachers": "5",
+        "student:count": "24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.6194596,
+          27.5871418
+        ]
+      },
+      "id": "node/9507378190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9523779645",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "school",
+        "name": "श्री कमला देवी आधारभूत विद्यालय",
+        "name:en": "Shree Kamala Devi Aadharbhut Bidhyalaya",
+        "name:ne": "श्री कमला देवी आधारभूत विद्यालय"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5313195,
+          27.5834666
+        ]
+      },
+      "id": "node/9523779645"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9523779653",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "school",
+        "name": "श्री गोरखनाथ आधारभूत विद्यालय",
+        "name:en": "Shree Gorakhnath Aadharbhut School",
+        "name:ne": "श्री गोरखनाथ आधारभूत विद्यालय"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5266966,
+          27.5918945
+        ]
+      },
+      "id": "node/9523779653"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9524047000",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "school",
+        "name": "श्री शेवत गणेश विद्यालय",
+        "name:en": "shree shewt ganesh school",
+        "name:ne": "श्री शेवत गणेश विद्यालय"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5375293,
+          27.6095225
+        ]
+      },
+      "id": "node/9524047000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9524684234",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "school",
+        "name": "एसओएस चिल्ड्रेन ",
+        "name:en": "SoS Children Village",
+        "name:ne": "एसओएस चिल्ड्रेन "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5279149,
+          27.6154216
+        ]
+      },
+      "id": "node/9524684234"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9524684235",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "school",
+        "name": "सान्तलम एकेडेमी",
+        "name:en": "Santalum Academy",
+        "name:ne": "सान्तलम एकेडेमी"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5285571,
+          27.6134024
+        ]
+      },
+      "id": "node/9524684235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9524684243",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "school",
+        "name": "श्री ग्रामोदय नि. मा. बि",
+        "name:en": "Shree Gramodaya Ni.Ma.Bi.",
+        "name:ne": "श्री ग्रामोदय नि. मा. बि"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5245027,
+          27.5996184
+        ]
+      },
+      "id": "node/9524684243"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9524684244",
+        "addr:municipality": "panauti_municipality",
+        "addr:province": "bagmati",
+        "amenity": "school",
+        "name": "हाइलैंड स्कूल",
+        "name:en": "Highland School",
+        "name:ne": "हाइलैंड स्कूल"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5224,
+          27.5987
+        ]
+      },
+      "id": "node/9524684244"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10229715394",
+        "addr:street": "Gosaithan",
+        "amenity": "school",
+        "email": "nsgurukul@gmail.com",
+        "name": "श्री नैमिशरण्य संस्कृत गुरुकुलम",
+        "name:en": "Shree Naimisharanya Sanskrit Gurukulam",
+        "name:ne": "श्री नैमिशरण्य संस्कृत गुरुकुलम",
+        "phone": "011-491466"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5429011,
+          27.630332
+        ]
+      },
+      "id": "node/10229715394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10895990235",
+        "amenity": "school",
+        "name": "Namo Buddha Secondary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.5573457,
+          27.5798454
+        ]
+      },
+      "id": "node/10895990235"
+    }
+  ]
+}

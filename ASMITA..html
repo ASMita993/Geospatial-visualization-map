@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGIS Application</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css" />
+  <script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
+
+  <style>
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+    .legend {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgb(175, 209, 242);
+      padding: 15px;
+      border: 1px solid #fbfbfb;
+      border-radius: 5px;
+      font-size: 20px;
+      z-index: 1000;
+      box-shadow: 0 4px 5px rgba(160, 4, 77, 0.848);
+      cursor: pointer;
+    }
+    .legend-toggle:hover {
+      text-decoration: underline;
+      color: #0b0a0a;
+    }
+    .legend-checkboxes {
+      display: none;
+      margin-top: 10px;
+      list-style: none;
+      padding-left: 0;
+    }
+    .legend-checkboxes.show {
+      display: block;
+    }
+    .legend-checkboxes li {
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #58630f;
+    }
+    .btn-toggle {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #222325;
+      color: white;
+      border: none;
+    }
+    .btn-toggle:hover {
+      background-color: #1e2023;
+    }
+    .school-popup-content {
+      font-weight: bold;
+    }
+    .legend-checkboxes input[type="checkbox"]:hover {
+      cursor: pointer;
+    }
+    .form-check-input:checked {
+      background-color: #00ffd9;
+      border-color: #ff0015;
+    }
+    .form-check-label {
+      color: #5e0d35;
+    }
+    .form-check-label:hover {
+      color: #5e0b34;
+    }
+    #map {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .leaflet-marker-icon:hover {
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  
+  </div>
+  <div class="container-fluid">
+    <h1 class="absolute" style="color: #75013b;">WebGIS Application to Visualize Geospatial and Weather Data</h1>
+    <div id="map"></div>
+  </div>
+
+  <div class="legend">
+    <p class="legend-toggle">Legends</p>
+    <ul class="legend-checkboxes">
+      <li>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="satellite">
+          <label class="form-check-label" for="satellite">
+             Satellite View
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="districts">
+          <label class="form-check-label" for="districts">
+             Districts
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="municipalities">
+          <label class="form-check-label" for="municipalities">
+             Municipalities
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="states">
+          <label class="form-check-label" for="states">
+             Provinces
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="schools">
+          <label class="form-check-label" for="schools">
+             Schools
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="weatherToggle">
+          <label class="form-check-label" for="weatherToggle">
+             Weather Data
+          </label>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+     //leaflet map setup
+    const map = L.map('map').setView([28.0, 84.0], 7);
+//adding basemap layer
+    const tileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+// Adding Satellite map layer
+    const satelliteLayer = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+      maxZoom: 20,
+      subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+      attribution: 'Google Maps tiles (ensure proper usage rights)'
+    });
+
+    // toggeling satellite layer view
+    document.getElementById('satellite').addEventListener('change', function (e) {
+      if (e.target.checked) {
+        satelliteLayer.addTo(map);
+      } else {
+        map.removeLayer(satelliteLayer);
+      }
+    });
+//adding school icon
+    const schoolIcon = L.icon({
+      iconUrl: 'images/school-icon.png',
+      iconSize: [32, 32],
+      iconAnchor: [16, 32],
+      popupAnchor: [0, 0]
+    });
+//fetching the weather data (temperature and snowfall)
+    async function fetchWeatherData(lat, lon) {
+      const apiUrl = "https://api.open-meteo.com/v1/forecast";
+      
+      try {
+        const response = await axios.get(apiUrl, {
+          params: {
+            latitude: lat,
+            longitude: lon,
+            hourly: 'temperature_2m,snowfall',
+            timezone: 'Asia/Singapore'
+          }
+        });
+    
+        const hourly = response.data.hourly;
+        const utcOffsetSeconds = response.data.utc_offset_seconds;
+        
+        const timeRange = hourly.time.map(t => new Date((t + utcOffsetSeconds) * 1000));
+    
+        const temperature2m = hourly.temperature_2m;
+        const snowfall = hourly.snowfall;
+    
+        return {
+          time: timeRange,
+          temperature2m: temperature2m,
+          snowfall: snowfall
+        };
+        
+      } catch (error) {
+        console.error('Error fetching weather data:', error);
+        return null;
+      }
+    }
+//toggle handling of the weather data (add or remove geojson layer)
+    function handleLayerToggle(checkboxId, geojsonLayer, markerLayerGroup) {
+      document.getElementById(checkboxId).addEventListener('change', function (e) {
+        if (e.target.checked) {
+          geojsonLayer.addTo(map);
+          markerLayerGroup.forEach(function(marker) {
+            marker.addTo(map);
+          });
+        } else {
+          map.removeLayer(geojsonLayer);
+          markerLayerGroup.forEach(function(marker) {
+            marker.remove();
+          });
+        }
+      });
+    }
+//loading geojson files for attributes
+    var DistrictsgeojsonLayer = omnivore.geojson('Districts.geojson')
+      .on('ready', function() {
+        this.eachLayer(function(layer) {
+          var districtName = layer.feature.properties.DISTRICT || 'Unnamed District';
+          layer.bindPopup('<strong>District Name:</strong> ' + districtName, {
+            className: 'custom-popup'
+          });
+        });
+      });
+
+    var MunicipalitiesgeojsonLayer = omnivore.geojson('Municipalities.geojson')
+    .on('ready', function() {
+        this.eachLayer(function(layer) {
+          var municipality_name = layer.feature.properties.NAME;
+          layer.bindPopup('<strong>Municipality:</strong> ' + municipality_name, {
+            className: 'custom-popup'
+          });
+        });
+      });
+
+    var ProvincesgeojsonLayer = omnivore.geojson('Province.geojson')
+    .on('ready', function() {
+        this.eachLayer(function(layer) {
+          var provincename = layer.feature.properties.shape1;
+          layer.bindPopup('<strong>Province:</strong> ' + provincename, {
+            className: 'custom-popup'
+          });
+        });
+      });
+
+    handleLayerToggle('districts', DistrictsgeojsonLayer, []);
+    handleLayerToggle('municipalities', MunicipalitiesgeojsonLayer, []);
+    handleLayerToggle('states', ProvincesgeojsonLayer, []);
+
+    var schoolMarkers = [];
+    var DhulikhelSchoolsLayer = omnivore.geojson('school_in_dhulikhel.geojson')
+      .on('ready', function () {
+        this.eachLayer(function (layer) {
+          var properties = layer.feature.properties;
+          var popupContent = `
+            <strong>School Name:</strong> ${properties['name:en'] || properties.name || 'Unknown'}<br>
+            <strong>Address:</strong> ${properties['addr:hamlet'] || properties['addr:street'] || 'N/A'}<br>
+          `;
+
+          var lat = layer.getLatLng().lat;
+          var lon = layer.getLatLng().lng;
+          var marker = L.marker([lat, lon], { icon: schoolIcon }).bindPopup(popupContent, {
+            className: 'custom-popup'
+          });
+
+          schoolMarkers.push(marker);
+        });
+      });
+
+    handleLayerToggle('schools', DhulikhelSchoolsLayer, schoolMarkers);
+
+    var ALLGeojsonLayer = omnivore.geojson('Students Location.geojson')
+      .on('ready', function () {
+        this.eachLayer(function (layer) {
+          var properties = layer.feature.properties;
+
+          var popupContent = `
+            <strong>Name:</strong> ${properties.Name}<br>
+            <strong>Municipality:</strong> ${properties.Municipality}<br>
+            <strong>District:</strong> ${properties.District}<br>
+            <strong>Province:</strong> ${properties.Province}<br>
+          `;
+
+          layer.bindPopup(popupContent, {
+            className: 'custom-popup'
+          });
+
+          // load student location data with attributes and weather
+          document.getElementById('weatherToggle').addEventListener('change', async function () {
+            if (this.checked) {
+              const lat = layer.getLatLng().lat;
+              const lon = layer.getLatLng().lng;
+              const weather = await fetchWeatherData(lat, lon);
+              if (weather) {
+                const updatedContent = `
+                  ${popupContent}
+                  <strong>Temperature:</strong> ${weather.temperature2m[0]}°C<br>
+                  <strong>Snowfall:</strong> ${weather.snowfall[0]} mm<br>
+                `;
+                layer.setPopupContent(updatedContent);
+              }
+            } else {
+              layer.setPopupContent(popupContent);
+            }
+          });
+        });
+      })
+      .addTo(map);
+//reveal or hide the list of checkboxes
+    document.querySelector('.legend-toggle').addEventListener('click', function () {
+      document.querySelector('.legend-checkboxes').classList.toggle('show');
+    });
+//when page is loaded, layers are set to unchecked
+    window.onload = function () {
+      document.getElementById('districts').checked = false;
+      document.getElementById('municipalities').checked = false;
+      document.getElementById('states').checked = false;
+      document.getElementById('schools').checked = false;
+      document.getElementById('weatherToggle').checked = false;
+    };
+// searching option by name of student
+    var searchControl = new L.Control.Search({
+      layer: ALLGeojsonLayer,
+      propertyName: 'Name',
+      marker: false
+    });
+    map.addControl(searchControl);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
